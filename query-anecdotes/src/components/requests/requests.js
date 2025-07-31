@@ -8,7 +8,6 @@ export const getAll = async () => {
 }
 
 export const createAnecdote = async (content) => {
-    // Validación: rechazar si es muy corto
     if (content.length < 5) {
         throw new Error('Anecdote must be at least 5 characters long')
     }
